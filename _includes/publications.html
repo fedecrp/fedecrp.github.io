@@ -1,14 +1,13 @@
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
-    {% if page.title == "Home" %}
-      {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% else %}
-      {% for item in site.data.publications.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% endif %}
+    <h4 class="fw-bold border-bottom pb-3 mb-5">Publications</h4>
+    <ul>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Stella_Maris_(novel)" target="_blank">First</a>
+  </li>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Stella_Maris_(novel)" target="_blank">Second</a>
+  </li>
+</ul>
   </div>
 </div>

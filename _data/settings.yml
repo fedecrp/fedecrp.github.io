@@ -1,5 +1,5 @@
-menu:
-- {name: 'teaching', url: '/teaching'}
+#menu:
+#- {name: 'teaching', url: '/teaching'}
 #- {name: 'publications', url: '/publications'}
 #- {name: 'courses', url: '/courses'}
 #- {name: 'cv', url: '/cv'}

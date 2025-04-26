@@ -1,38 +1,31 @@
 <ul>
-  <li>
-    <details>
-      <summary>
-        <a href="https://arxiv.org/pdf/2404.11767" target="_blank">
-          Regret Analysis in Threshold Policy Design
-        </a>
-        — Accepted at <em>Journal of Econometrics</em>
-      </summary>
-      <div class="abstract mt-2">
-        <strong>Abstract:</strong>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris…
-        </p>
-      </div>
-    </details>
+  <li class="publication-item mb-4">
+    <!-- your existing title line -->
+    <div class="publication-title">
+      <a href="https://arxiv.org/pdf/2404.11767" target="_blank">
+        Regret Analysis in Threshold Policy Design
+      </a>
+      . Accepted at <em>Journal of Econometrics</em>.
+    </div>
+
+    <!-- the new Abstract button, immediately below -->
+    <button
+      type="button"
+      class="btn btn-sm btn-outline-primary abstract-toggle mt-2"
+    >Abstract</button>
+
+    <!-- hidden abstract container -->
+    <div
+      class="publication-abstract mt-2"
+      style="display: none; padding: .5rem; border-left: 3px solid #ccc;"
+    >
+      <strong>Abstract:</strong>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua…
+      </p>
+    </div>
   </li>
 
-  <li>
-    <details>
-      <summary>
-        <a href="https://pdf.sciencedirectassets.com/…S0095069624001487/main.pdf" target="_blank">
-          Raided by the storm: How three decades of thunderstorms shaped U.S. incomes and wages
-        </a>
-        — <em>Journal of Environmental Economics and Management</em>, Vol. 130, March 2025
-      </summary>
-      <div class="abstract mt-2">
-        <strong>Abstract:</strong>
-        <p>
-          In this paper we document how variability in thunderstorm patterns over the last thirty years…
-        </p>
-      </div>
-    </details>
-  </li>
+  <!-- repeat for each paper… -->
 </ul>
-

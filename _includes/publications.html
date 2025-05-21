@@ -1,88 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Publications</title>
-  <style>
-    .pub-entry {
-      margin-bottom: 2em;
-    }
-
-    .publication-links a {
-      text-decoration: none;
-      color: #007bff;
-      cursor: pointer;
-    }
-
-    .publication-links a:hover {
-      text-decoration: underline;
-    }
-
-    .abstract-content {
-      display: none;
-      margin-top: 0.5em;
-      text-align: justify;
-    }
-
-    .abstract-content.show {
-      display: block;
-    }
-  </style>
-</head>
-<body>
-
+<div class="abstract-content mt-2" style="text-align: justify;">
 <div class="row g-5 mb-5">
   <div>
     <h4 class="fw-bold border-bottom pb-3 mb-5">Publications</h4>
-    <ul class="list-unstyled">
-
-      <!-- First paper -->
-      <li class="pub-entry">
+    <ul class="publications list-unstyled">
+      
+      <li class="mb-4">
+        <!-- your title line -->
         <div>
-          <strong>Regret Analysis in Threshold Policy Design</strong>.  
-          <em>Journal of Econometrics</em>, Volume 249, Part B, 2025.
+          <!-- <a href="https://arxiv.org/pdf/2404.11767" target="_blank"> -->
+            <a href="https://fedecrp.github.io/assets/papers/regret_analysis_in_threshold_policy_design.pdf" target="_blank">
+            Regret Analysis in Threshold Policy Design</a>.
+           <em>Journal of Econometrics</em>, Volume 249, Part B, 2025.
         </div>
-        <div class="publication-links">
-          [ 
-          <a href="#" onclick="document.getElementById('abs1').classList.toggle('show'); return false;">Abstract</a> |
-          <a href="https://www.sciencedirect.com/science/article/pii/S0304407624000713" target="_blank">Published Version</a> |
-          <a href="https://arxiv.org/abs/2404.11767" target="_blank">ArXiv Version</a>
-          ]
-        </div>
-        <div id="abs1" class="abstract-content">
-          <p>
-            Threshold policies are decision rules that assign treatments based on whether an observable characteristic exceeds a certain threshold. They are widespread across multiple domains, including welfare programs, taxation, and clinical medicine. This paper examines the problem of designing threshold policies using experimental data, when the goal is to maximize the population welfare. First, I characterize the regret – a measure of policy optimality – of the Empirical Welfare Maximizer (EWM) policy, popular in the literature. Next, I introduce the Smoothed Welfare Maximizer (SWM) policy, which improves the EWM’s regret convergence rate under an additional smoothness condition. The two policies are compared by studying how differently their regrets depend on the population distribution, and investigating their finite sample performances through Monte Carlo simulations. In many contexts, the SWM policy guarantees larger welfare than the EWM. An empirical illustration demonstrates how the treatment recommendations of the two policies may differ in practice.
-          </p>
-        </div>
+
+        <!-- DETAILS / SUMMARY for abstract -->
+        <details class="abstract-toggle mt-2">
+          <summary>Abstract</summary>
+          <div class="abstract-content mt-2">
+            <p>
+              Threshold policies are decision rules that assign treatments based on whether an observable characteristic exceeds a certain threshold. They are widespread across multiple domains, including welfare programs, taxation, and clinical medicine. This paper examines the problem of designing threshold policies using experimental data, when the goal is to maximize the population welfare. First, I characterize the regret – a measure of policy optimality – of the Empirical Welfare Maximizer (EWM) policy, popular in the literature. Next, I introduce the Smoothed Welfare Maximizer (SWM) policy, which improves the EWM’s regret convergence rate under an additional smoothness condition. The two policies are compared by studying how differently their regrets depend on the population distribution, and investigating their finite sample performances through Monte Carlo simulations. In many contexts, the SWM policy guarantees larger welfare than the EWM. An empirical illustration demonstrates how the treatment recommendations of the two policies may differ in practice.
+            </p>
+          </div>
+        </details>
       </li>
 
-      <!-- Second paper -->
-      <li class="pub-entry">
+      <li class="mb-4">
         <div>
-          <strong>Raided by the storm: How three decades of thunderstorms shaped U.S. incomes and wages</strong>  
-          with 
-          <a href="https://matteocoronese.eu/" target="_blank">Matteo Coronese</a>, 
-          <a href="http://www.francescolamperti.eu/" target="_blank">Francesco Lamperti</a>, 
-          <a href="https://sites.psu.edu/chiaromonte/" target="_blank">Francesca Chiaromonte</a>, 
-          Andrea Roventini.  
+          <!-- <a href="https://www.sciencedirect.com/science/article/pii/S0095069624001487" target="_blank"> -->
+            <a href="https://fedecrp.github.io/assets/papers/raided_by_the_storm.pdf" target="_blank">
+            Raided by the storm: How three decades of thunderstorms shaped U.S. incomes and wages</a> with <a href="https://matteocoronese.eu/" target="_blank">Matteo Coronese</a>, 
+  <a href="http://www.francescolamperti.eu/" target="_blank">Francesco Lamperti</a>, 
+  <a href="https://sites.psu.edu/chiaromonte/" target="_blank">Francesca Chiaromonte</a>, 
+  Andrea Roventini.
           <em>Journal of Environmental Economics and Management</em>, Vol. 130, March 2025.
         </div>
-        <div class="publication-links">
-          [ 
-          <a href="#" onclick="document.getElementById('abs2').classList.toggle('show'); return false;">Abstract</a> |
-          <a href="https://www.sciencedirect.com/science/article/pii/S0095069624001487" target="_blank">Published Version</a>
-          ]
-        </div>
-        <div id="abs2" class="abstract-content">
-          <p>
-            Climate change and weather events are increasingly affecting the macroeconomic performance of countries and regions. However, their effects on income inequality are less understood. We estimate the dynamic impact of thunderstorms on income and wages and reveal a robust asymmetric effect. We leverage a comprehensive dataset covering more than 200,000 events affecting contiguous U.S. counties across three decades. Storms have caused the highest number of billion-dollar disaster events since the eighties, but they have the lowest average event cost. They are short-lived, locally confined, relatively frequent, difficult-to-predict, and hazardous albeit not fully destructive events. While such features are convenient for the identification of impacts, previous studies mostly focused on more extreme events. We document a robust negative association between storm activity, income and wages growth. While income tends to recover in the long run, wages exhibit a significantly more stubborn decline, suggesting persistent and adverse impacts on (functional) income inequality. A one standard deviation increase in wind exposure generates a loss of 0.15% (0.21%) in wages after three (nine) years; incomes fall by a larger extent initially (0.19% after three years) while fully recovering in the longer run. In addition to their notable asymmetry, such estimates are non-negligible—especially given the downward rigidity of U.S. wages. Our analyses also highlight a lack of effective adaptation and stronger negative impacts in economically disadvantaged regions. Finally, we find evidence for a sizable shock-absorbing role of federal assistance.
-          </p>
-        </div>
+        <details class="abstract-toggle mt-2">
+          <summary>Abstract</summary>
+          <div class="abstract-content mt-2">
+            <p>
+              Climate change and weather events are increasingly affecting the macroeconomic performance of countries and regions. However, their effects on income inequality are less understood. We estimate the dynamic impact of thunderstorms on income and wages and reveal a robust asymmetric effect. We leverage a comprehensive dataset covering more than 200,000 events affecting contiguous U.S. counties across three decades. Storms have caused the highest number of billion-dollar disaster events since the eighties, but they have the lowest average event cost. They are short-lived, locally confined, relatively frequent, difficult-to-predict, and hazardous albeit not fully destructive events. While such features are convenient for the identification of impacts, previous studies mostly focused on more extreme events. We document a robust negative association between storm activity, income and wages growth. While income tends to recover in the long run, wages exhibit a significantly more stubborn decline, suggesting persistent and adverse impacts on (functional) income inequality. A one standard deviation increase in wind exposure generates a loss of 0.15% (0.21%) in wages after three (nine) years; incomes fall by a larger extent initially (0.19% after three years) while fully recovering in the longer run. In addition to their notable asymmetry, such estimates are non-negligible—especially given the downward rigidity of U.S. wages. Our analyses also highlight a lack of effective adaptation and stronger negative impacts in economically disadvantaged regions. Finally, we find evidence for a sizable shock-absorbing role of federal assistance.
+            </p>
+          </div>
+        </details>
       </li>
 
+      <!-- …and so on for each publication -->
     </ul>
   </div>
 </div>
-
-</body>
-</html>

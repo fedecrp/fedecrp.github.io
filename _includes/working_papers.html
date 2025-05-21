@@ -1,43 +1,58 @@
-<div class="abstract-content mt-2" style="text-align: justify;">
 <div class="row g-5 mb-5">
   <div>
     <h4 class="fw-bold border-bottom pb-3 mb-5">Working Papers</h4>
     <ul class="working_paper list-unstyled">
 
-   <li class="mb-4">
-        <!-- your title line -->
+      <!-- First working paper -->
+      <li class="mb-4">
         <div>
-          <a href="https://arxiv.org/pdf/2402.10836.pdf" target="_blank">Manipulation Test for Multidimensional RDD</a>.
+          <strong>Manipulation Test for Multidimensional RDD</strong>.
         </div>
-
-        <!-- DETAILS / SUMMARY for abstract -->
-        <details class="abstract-toggle mt-2">
-          <summary>Abstract</summary>
-          <div class="abstract-content mt-2">
-            <p>
+        <div>
+          [ 
+          <a href="#" class="abstract-toggle" data-target="abs3" 
+             style="text-decoration: underline; color: #007bff;">Abstract</a> 
+          | 
+          <a href="https://arxiv.org/pdf/2402.10836.pdf" target="_blank">Version</a> 
+          ]
+        </div>
+        <div id="abs3" class="abstract-content mt-2" style="display: none; text-align: justify;">
+          <p>
             The causal inference model proposed by Lee (2008) for the regression discontinuity design (RDD) relies on assumptions that imply the continuity of the density of the assignment (running) variable. The test for this implication is commonly referred to as the manipulation test and is regularly reported in applied research to strengthen the design's validity. The multidimensional RDD (MRDD) extends the RDD to contexts where treatment assignment depends on several running variables. This paper introduces a manipulation test for the MRDD. First, it develops a theoretical model for causal inference with the MRDD, which is used to derive a testable implication on the conditional marginal densities of the running variables. Then, it constructs the test for the implication based on a quadratic form of a vector of statistics separately computed for each marginal density. Finally, the proposed test is compared with alternative procedures commonly employed in applied research.  
-            </p>
-          </div>
-        </details>
+          </p>
+        </div>
       </li>
 
-  <li class="mb-4">
-        <!-- your title line -->
+      <!-- Second working paper -->
+      <li class="mb-4">
         <div>
-          <a href="https://arxiv.org/pdf/2410.18272" target="_blank">Partially Identified Rankings from Pairwise Interactions</a> with Danil Fedchenko.
+          <strong>Partially Identified Rankings from Pairwise Interactions</strong> with Danil Fedchenko.
         </div>
+        <div>
+          [ 
+          <a href="#" class="abstract-toggle" data-target="abs4" 
+             style="text-decoration: underline; color: #007bff;">Abstract</a> 
+          | 
+          <a href="https://arxiv.org/pdf/2410.18272" target="_blank">Version</a> 
+          ]
+        </div>
+        <div id="abs4" class="abstract-content mt-2" style="display: none; text-align: justify;">
+          <p>
+            This paper considers the problem of ranking objects based on their latent merits using data from pairwise interactions. Existing approaches rely on the restrictive assumption that all the interactions are either observed or missed randomly. We investigate what can be inferred about rankings when this assumption is relaxed. First, we demonstrate that in parametric models, such as the popular Bradley-Terry-Luce model, rankings are point-identified if and only if the tournament graph is connected. Second, we show that in nonparametric models based on strong stochastic transitivity, rankings in a connected tournament are only partially identified. Finally, we propose two statistical tests to determine whether a ranking belongs to the identified set. One test is valid in finite samples but computationally intensive, while the other is easy to implement and valid asymptotically. We illustrate our procedure using Brazilian employer-employee data to test whether male and female workers rank firms differently when making job transitions.
+          </p>
+        </div>
+      </li>
 
-        <!-- DETAILS / SUMMARY for abstract -->
-        <details class="abstract-toggle mt-2">
-          <summary>Abstract</summary>
-          <div class="abstract-content mt-2">
-            <p>
-            This paper considers the problem of ranking objects based on their latent merits using data from pairwise interactions. Existing approaches rely on the restrictive assumption that all the interactions are either observed or missed randomly. We investigate what can be inferred about rankings when this assumption is relaxed. First, we demonstrate that in parametric models, such as the popular Bradley-Terry-Luce model, rankings are point-identified if and only if the tournament graph is connected. Second, we show that in nonparametric models based on strong stochastic transitivity, rankings in a connected tournament are only partially identified. Finally, we propose two statistical tests to determine whether a ranking belongs to the identified set. One test is valid in finite samples but computationally intensive, while the other is easy to implement and valid asymptotically. We illustrate our procedure using Brazilian employer-employee data to test whether male and female workers rank firms differently when making job transitions.</p>
-          </div>
-        </details>
-      </li> 
-
-      
-</ul>
+    </ul>
   </div>
 </div>
+
+<script>
+  document.querySelectorAll('.abstract-toggle').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.getElementById(this.dataset.target);
+      target.style.display = target.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>

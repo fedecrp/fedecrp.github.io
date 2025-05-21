@@ -16,26 +16,28 @@
         <!-- DETAILS / SUMMARY for abstract -->
         <div>
   [ 
-  <span onclick="this.nextElementSibling.classList.toggle('show')" 
-        style="cursor: pointer; color: #007bff; text-decoration: underline;">
-    Abstract
-  </span> 
+  <a href="#" class="abstract-toggle" data-target="abs1" 
+     style="text-decoration: underline; color: #007bff;">Abstract</a> 
   | 
   <a href="https://your-link-here.com" target="_blank">Version</a> 
   ]
 </div>
 
-<div class="abstract-content mt-2" style="display: none; text-align: justify;">
+<div id="abs1" class="abstract-content mt-2" style="display: none; text-align: justify;">
   <p>
     Threshold policies are decision rules that assign treatments based on whether an observable characteristic exceeds a certain threshold. They are widespread across multiple domains, including welfare programs, taxation, and clinical medicine. This paper examines the problem of designing threshold policies using experimental data, when the goal is to maximize the population welfare. First, I characterize the regret – a measure of policy optimality – of the Empirical Welfare Maximizer (EWM) policy, popular in the literature. Next, I introduce the Smoothed Welfare Maximizer (SWM) policy, which improves the EWM’s regret convergence rate under an additional smoothness condition. The two policies are compared by studying how differently their regrets depend on the population distribution, and investigating their finite sample performances through Monte Carlo simulations. In many contexts, the SWM policy guarantees larger welfare than the EWM. An empirical illustration demonstrates how the treatment recommendations of the two policies may differ in practice.
   </p>
 </div>
 
-<style>
-  .abstract-content.show {
-    display: block !important;
-  }
-</style>
+<script>
+  document.querySelectorAll('.abstract-toggle').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.getElementById(this.dataset.target);
+      target.style.display = target.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
 
 
       </li>

@@ -20,6 +20,16 @@ layout: default
 
 {% include publications.html %}
 
+<script>
+  document.querySelectorAll('.abstract-toggle').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.getElementById(this.dataset.target);
+      target.style.display = target.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
 <!--
 {% include work_in_progress.html %}
 

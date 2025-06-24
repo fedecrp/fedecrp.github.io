@@ -16,5 +16,5 @@ body a {
 .paper-icon {
   width: 1.15em;          /* scales with the surrounding font */
   height: 1.15em;
-  margin-right: 0.15em;   /* breathing room before the title */
+  vertical-align: 0.20em;/* baseline-align with text */
 }

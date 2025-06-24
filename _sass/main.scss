@@ -12,3 +12,10 @@ body {
 body a {
   color: $linkColor
 }
+
+.paper-icon {
+  width: 1.15em;          /* scales with the surrounding font */
+  height: 1.15em;
+  vertical-align: -0.20em;/* baseline-align with text */
+  margin-right: 0.35em;   /* breathing room before the title */
+}
